@@ -1,11 +1,24 @@
 @import url('https://fonts.cdnfonts.com/css/digital-7-mono');
 @import url('https://fonts.cdnfonts.com/css/led-calculator');
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      margin-top: 100%;
+    }
+    to {
+      opacity: 1;
+      margin-top: 0%;
+    }
+  }
+
 body {
     background-color: rgb(122,122,122);
     margin: 0;
     height: 100vh;
     overflow: hidden;
     font-family: 'LED Calculator', sans-serif;
+    animation-duration: 1.2s;
+    /* animation-name: slideIn; */
 }
 
 .box0 {
@@ -47,7 +60,7 @@ body {
     width: 360px;
     text-align: right;
     line-height: 100px;
-    font-size: 56px;
+    font-size: 54px;
     white-space: nowrap;
     overflow: hidden;
     color:rgb(255,255,255);
@@ -88,6 +101,7 @@ body {
     background-color: rgb(253, 253, 78);
     font-size: 64px;
 }
+.equal,
 .ch {
     background-color: rgb(200,200,200);
     font-size: 54px;
