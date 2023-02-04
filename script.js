@@ -131,7 +131,11 @@ keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 // [X] BUTTON => Convert to percentage
 // [X] BUTTON => Toggle positive/negative
 
-// MAIN FUNCTIONS
+// MAIN OPERATIONS
+
+document.querySelectorAll(".op").forEach((el) => el.addEventListener("click",changeOp)  );
+document.querySelectorAll(".ch").forEach((el) => el.addEventListener("click",addChar)  );
+window.addEventListener('keydown', processKey);
 
 let ekey = document.querySelector(".equal")
 function operateGo() {
@@ -198,7 +202,6 @@ function changeOp(e) {
     operateGo()
     }
 }
-document.querySelectorAll(".op").forEach((el) => el.addEventListener("click",changeOp)  );
 
 function processKey(e) {
     const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
@@ -225,6 +228,3 @@ function processKey(e) {
         operateGo()
     }  
 }
-document.querySelectorAll(".ch").forEach((el) => el.addEventListener("click",addChar)  );
-
-window.addEventListener('keydown', processKey);
