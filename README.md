@@ -6,4 +6,4 @@ Live preview: https://deavoe.github.io/simple-calc/
 
 # Notes:
 
-To continue operating the result, always start with an operator first. All results are rounded to the 15th place.
+To continue operating the result, always start with an operator first and press Enter to complete the operation. All results are rounded to the 15th place.
